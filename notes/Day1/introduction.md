@@ -86,8 +86,6 @@ Terraform is a tool for building, changing, and versioning infrastructure safely
     
 
 ### 8. Mistakes / Corrections Found
-
--   **Command Error:** You noted `terratem plan`. The correct command is `terraform plan`.
     
 -   **Security Correction:** In your notes, you provided hardcoded `access_key` and `secret_key`. This is a critical security violation.
     
