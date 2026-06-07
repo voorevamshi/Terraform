@@ -96,6 +96,7 @@ resource "aws_s3_bucket_versioning" "versioning_example" {
 }
 
 ```
+[Understanding API Error Codes (409 Conflict) and Global Namespace Constraints](409Conflict.md)
 
 #### **Fixing the EC2 Configuration**
 
