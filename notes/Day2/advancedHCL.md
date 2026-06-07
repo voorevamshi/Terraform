@@ -1,4 +1,4 @@
-### Using Data Sources to Resolve AMI Errors and Enhance Dynamic Infrastructure**
+### Using Data Sources to Resolve AMI Errors and Enhance Dynamic Infrastructure
 
 ### 🎯 Learning Objectives
 -   Understand the role of **Data Sources** in Terraform.
