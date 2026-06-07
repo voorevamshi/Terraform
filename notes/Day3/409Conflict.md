@@ -121,7 +121,7 @@ resource "aws_s3_bucket" "example" {
 }
 
 ```
-
+- [Resolving Dependency Lock File Errors and Managing Provider Constraints](dependencyLockFileErrors.md)
 ### ## Terraform Associate Exam Focus Areas
 
 -   **Error Handling:** Be able to distinguish between a `403` (Forbidden/Permission error) and a `409` (Conflict/Already Exists).
