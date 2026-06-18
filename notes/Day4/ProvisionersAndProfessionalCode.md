@@ -76,3 +76,22 @@ Hardcoded scripts are difficult to maintain. Professional code uses a layered st
 #### **Professional `main.tf` Architecture**
 
 A professional file usually follows this top-down flow:
+
+| Component |  Role|
+|--|--|
+| **`terraform {}`** | Defines required provider versions and backend configuration.|
+| **`variable {}`** | Defines input parameters (Region, Instance size, App version). |
+|**`data {}`** | Performs external lookups (e.g., AMI IDs, VPC information).| 
+|**`locals {}`**|Defines shared constants and reusable logic (e.g., common tags). |**`resource {}`**| Defines the actual infrastructure components (e.g., EC2, SG, S3).  | 
+### 3. Key Takeaways
+
+-   **Provisioners are not declarative:** They run once and then Terraform "forgets" them. If the software configuration changes, the provisioner won't re-run.
+    
+-   **Use `user_data` first:** It is the idiomatic way to bootstrap EC2 instances.
+    
+-   **The Power of `locals`:** Always use them to define tags; it makes mass-updating your infrastructure metadata trivial.
+    
+-   **Dynamic over Static:** If you find yourself copying an ID from the AWS Console, look for a `data` source to fetch it instead.
+    
+
+**Would you like to try writing a `variables.tf` file to move your hardcoded values out of `main.tf`, or should we look at how to use the `terraform state` command to debug?**
