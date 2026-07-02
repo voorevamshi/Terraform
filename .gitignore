@@ -1,6 +1,6 @@
 .terraform/
 *.tfstate
 *.tfstate.backup
-
+target/
 # Ignore all Windows executable files
 *.exe
