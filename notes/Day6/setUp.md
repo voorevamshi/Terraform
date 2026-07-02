@@ -1,3 +1,3 @@
 # Product Service Setup
 
-- [User data](userData.md)
+- [User data for Product Service SB Applicaton](userDataForProductServiceSb.md)
