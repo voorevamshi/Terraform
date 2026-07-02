@@ -16,6 +16,8 @@ This session focuses on the "CI/CD-like" capability of Terraform: taking a compi
 
 ### 1. Analysis of the S3 Artifact Configuration
 
+- [main.tf](https://github.com/voorevamshi/Terraform/blob/main/s3/jarUploadToS3/main.tf)
+
 | Resource / Block | Role |  
 |---|---|  
 | **`data "aws_caller_identity"`** | Fetches the current AWS Account ID to ensure the S3 bucket name is globally unique. |  
